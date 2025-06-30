@@ -12,28 +12,34 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Agencia Digital</title>
+    <title data-i18n="title">Agencia Digital</title>
   </head>
   <body>
     <nav>
       <div class="nav__header">
         <div class="nav__logo">
-          <a href="#">Agency<span>Digital</span></a>
+          <a href="#" data-i18n="nav_logo_agency_digital"
+            >Agency<span>Digital</span></a
+          >
         </div>
         <div class="nav__menu__btn" id="menu-btn">
           <i class="ri-menu-line"></i>
         </div>
       </div>
       <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#client">Client</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" data-i18n="nav_link_home_text">Home</a></li>
+        <li><a href="#about" data-i18n="nav_link_about_us_text">About Us</a></li>
+        <li><a href="#portfolio" data-i18n="nav_link_portfolio_text">Portfolio</a></li>
+        <li><a href="#client" data-i18n="nav_link_client_text">Client</a></li>
+        <li><a href="#contact" data-i18n="nav_link_contact_text">Contact</a></li>
       </ul>
       <div class="nav__btns">
-        <button class="btn">Let's Talk Us</button>
+        <button class="btn" data-i18n="main_button">Let's Talk Us</button>
       </div>
+      <select id="lang-switcher" style="border: none">
+        <option value="en">EN</option>
+        <option value="pt-br">PT-BR</option>
+      </select>
     </nav>
 
     <header class="section__container header__container" id="home">
@@ -41,15 +47,17 @@
         <img src="assets/header.png" alt="header" />
       </div>
       <div class="header__content">
-        <h1>Building <span>Digital Product,</span> Brand and Experience</h1>
-        <p class="section__description">
+        <h1 data-i18n="header_heading">
+          Building <span>Digital Product,</span> Brand and Experience
+        </h1>
+        <p class="section__description" data-i18n="header_description">
           We help businesses grow by creating innovative digital products,
           memorable brand identities, and seamless user experiences that truly
           connect with their audience
         </p>
         <div class="header__btns">
-          <button class="btn">How It Works</button>
-          <a href="#">
+          <button class="btn" data-i18n="header_button_1">How It Works</button>
+          <a data-i18n="header_button_2" href="#">
             <span><i class="ri-play-fill"></i></span>
             Check Video
           </a>
@@ -59,45 +67,45 @@
 
     <section class="service">
       <div class="section__container service__container">
-        <h2 class="section__header">
+        <h2 class="section__header" data-i18n="services_header">
           We are Strategic Creative Digital Agency Service
         </h2>
         <div class="service__grid">
           <div class="service__card">
             <div><i class="ri-pencil-ruler-2-line"></i></div>
-            <h4>Product Design</h4>
-            <p class="section__description">
+            <h4 data-i18n="services_item_1_title">Product Design</h4>
+            <p class="section__description" data-i18n="services_item_1_description">
               We craft user-friendly digital products that solve real problems
               and enhance customer satisfaction.
             </p>
           </div>
           <div class="service__card">
             <div><i class="ri-computer-line"></i></div>
-            <h4>Digital Marketing</h4>
-            <p class="section__description">
+            <h4 data-i18n="services_item_2_title">Digital Marketing</h4>
+            <p class="section__description" data-i18n="services_item_2_description">
               Our data-driven marketing strategies help you reach the right
               audience and drive conversions.
             </p>
           </div>
           <div class="service__card">
             <div><i class="ri-pages-line"></i></div>
-            <h4>Web Design</h4>
-            <p class="section__description">
+            <h4 data-i18n="services_item_3_title">Web Design</h4>
+            <p class="section__description" data-i18n="services_item_3_description">
               We build responsive and visually appealing websites tailored to
               reflect your brand's personality.
             </p>
           </div>
           <div class="service__card">
             <div><i class="ri-layout-2-line"></i></div>
-            <h4>Creative Layout</h4>
-            <p class="section__description">
+            <h4 data-i18n="services_item_4_title">Creative Layout</h4>
+            <p class="section__description" data-i18n="services_item_4_description">
               Our unique layouts ensure your brand stands out and delivers a
               memorable visual experience.
             </p>
           </div>
         </div>
         <div class="service__btn">
-          <button class="btn">All Our Services</button>
+          <button class="btn" data-i18n="services_button">All Our Services</button>
         </div>
       </div>
     </section>
@@ -107,15 +115,15 @@
         <img src="assets/about.png" alt="about" />
       </div>
       <div class="about__content">
-        <h2 class="section__header">
+        <h2 class="section__header" data-i18n="about_us_header">
           We Create Ideas & Policies for Your Company Future
         </h2>
         <ul class="about__list">
           <li>
             <span><i class="ri-focus-2-line"></i></span>
             <div>
-              <h4>Company Mission</h4>
-              <p class="section__description">
+              <h4 data-i18n="about_us_mission_title">Company Mission</h4>
+              <p class="section__description" data-i18n="about_us_mission_description">
                 We aim to empower brands with innovative solutions that drive
                 growth, impact, and long-term success.
               </p>
@@ -124,8 +132,8 @@
           <li>
             <span><i class="ri-slideshow-line"></i></span>
             <div>
-              <h4>Company Vision</h4>
-              <p class="section__description">
+              <h4 data-i18n="about_us_vision_title">Company Vision</h4>
+              <p class="section__description" data-i18n="about_us_vision_description">
                 To be a trusted digital partner shaping the future of businesses
                 through creativity and technology.
               </p>
@@ -134,8 +142,8 @@
           <li>
             <span><i class="ri-search-eye-line"></i></span>
             <div>
-              <h4>Our Philosophy</h4>
-              <p class="section__description">
+              <h4 data-i18n="about_us_philosophy_title">Our Philosophy</h4>
+              <p class="section__description" data-i18n="about_us_philosophy_description">
                 We believe in collaboration, transparency, and bold thinking to
                 deliver meaningful results for every client.
               </p>
@@ -148,11 +156,11 @@
     <section class="portfolio" id="portfolio">
       <div class="section__container portfolio__container">
         <div class="portfolio__header">
-          <h2 class="section__header">
+          <h2 class="section__header" data-i18n="portfolio_header">
             Experience & Innovate Solutions for Creative Design & Development
             Agency
           </h2>
-          <p class="section__description">
+          <p class="section__description" data-i18n="portfolio_description">
             At AdencyBD, we blend years of industry experience with
             forward-thinking innovation to craft tailored design and development
             solutions. Our creative approach ensures every project stands
@@ -164,42 +172,42 @@
           <div class="portfolio__image">
             <div class="portfolio__image__content">
               <div>
-                <h4>16</h4>
-                <p>Years<br />Experience</p>
+                <h4 data-i18n="portfolio_stats_1_value">16</h4>
+                <p data-i18n="portfolio_stats_1_label">Years<br />Experience</p>
               </div>
               <div>
-                <h4>250</h4>
-                <p>Types of<br />Courses</p>
+                <h4 data-i18n="portfolio_stats_2_value">250</h4>
+                <p data-i18n="portfolio_stats_2_label">Types of<br />Courses</p>
               </div>
             </div>
             <img src="assets/portfolio.jpg" alt="portfolio" />
           </div>
           <ul class="portfolio__list">
             <li>
-              <span>01</span>
+              <span data-i18n="portfolio_list_1_number">01</span>
               <div>
-                <h4>Marketing Strategy</h4>
-                <p class="section__description">
+                <h4 data-i18n="portfolio_list_1_title">Marketing Strategy</h4>
+                <p class="section__description" data-i18n="portfolio_list_1_description">
                   We develop targeted marketing strategies that boost brand
                   visibility and drive business growth.
                 </p>
               </div>
             </li>
             <li>
-              <span>02</span>
+              <span data-i18n="portfolio_list_2_number">02</span>
               <div>
-                <h4>Project Management</h4>
-                <p class="section__description">
+                <h4 data-i18n="portfolio_list_2_title">Project Management</h4>
+                <p class="section__description" data-i18n="portfolio_list_2_description">
                   Our expert project managers ensure every project runs smoothly
                   and delivers results on time.
                 </p>
               </div>
             </li>
             <li>
-              <span>03</span>
+              <span data-i18n="portfolio_list_3_number">03</span>
               <div>
-                <h4>Consultant Specialist</h4>
-                <p class="section__description">
+                <h4 data-i18n="portfolio_list_3_title">Consultant Specialist</h4>
+                <p class="section__description" data-i18n="portfolio_list_3_description">
                   Our consultants provide expert insights and tailored guidance
                   to help your business make smart decisions.
                 </p>
@@ -211,15 +219,12 @@
     </section>
 
     <section class="section__container feedback__container" id="client">
-      <h2 class="section__header">Happy Customer Feedback</h2>
-      <!-- Slider main container -->
+      <h2 class="section__header" data-i18n="client_feedback_header">Happy Customer Feedback</h2>
       <div class="swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
           <div class="swiper-slide">
             <div class="feedback__card">
-              <p class="section__description">
+              <p class="section__description" data-i18n="client_feedback_testimonial_1_quote">
                 Working with AdencyBD was a game-changer for our online
                 presence. Their creativity and attention to detail exceeded our
                 expectations.
@@ -228,8 +233,8 @@
                 <div class="feedback__user">
                   <img src="assets/feedback-1.jpg" alt="feedback" />
                   <div>
-                    <h4>James Carter</h4>
-                    <h5>CEO, TechNova Solutions</h5>
+                    <h4 data-i18n="client_feedback_testimonial_1_user_name">James Carter</h4>
+                    <h5 data-i18n="client_feedback_testimonial_1_user_title">CEO, TechNova Solutions</h5>
                   </div>
                 </div>
                 <div class="feedback__rating">
@@ -244,7 +249,7 @@
           </div>
           <div class="swiper-slide">
             <div class="feedback__card">
-              <p class="section__description">
+              <p class="section__description" data-i18n="client_feedback_testimonial_2_quote">
                 The team at AdencyBD truly understands how to turn ideas into
                 impactful digital experiences. Highly professional and reliable.
               </p>
@@ -252,8 +257,8 @@
                 <div class="feedback__user">
                   <img src="assets/feedback-2.jpg" alt="feedback" />
                   <div>
-                    <h4>Sarah Mitchell</h4>
-                    <h5>Marketing Director, Green Organics</h5>
+                    <h4 data-i18n="client_feedback_testimonial_2_user_name">Sarah Mitchell</h4>
+                    <h5 data-i18n="client_feedback_testimonial_2_user_title">Marketing Director, Green Organics</h5>
                   </div>
                 </div>
                 <div class="feedback__rating">
@@ -268,7 +273,7 @@
           </div>
           <div class="swiper-slide">
             <div class="feedback__card">
-              <p class="section__description">
+              <p class="section__description" data-i18n="client_feedback_testimonial_3_quote">
                 From design to delivery, their process was seamless. Our new
                 website looks stunning and performs better than ever in all
                 aspects.
@@ -277,8 +282,8 @@
                 <div class="feedback__user">
                   <img src="assets/feedback-3.jpg" alt="feedback" />
                   <div>
-                    <h4>Anita Roy</h4>
-                    <h5>Founder, Roy Interiors</h5>
+                    <h4 data-i18n="client_feedback_testimonial_3_user_name">Anita Roy</h4>
+                    <h5 data-i18n="client_feedback_testimonial_3_user_title">Founder, Roy Interiors</h5>
                   </div>
                 </div>
                 <div class="feedback__rating">
@@ -293,7 +298,7 @@
           </div>
           <div class="swiper-slide">
             <div class="feedback__card">
-              <p class="section__description">
+              <p class="section__description" data-i18n="client_feedback_testimonial_4_quote">
                 AdencyBD helped us reimagine our brand identity with fresh
                 visuals and an effective marketing strategy. We loved the
                 collaboration!
@@ -302,8 +307,8 @@
                 <div class="feedback__user">
                   <img src="assets/feedback-4.jpg" alt="feedback" />
                   <div>
-                    <h4>David Kim</h4>
-                    <h5>Brand Manager, Urban Pulse</h5>
+                    <h4 data-i18n="client_feedback_testimonial_4_user_name">David Kim</h4>
+                    <h5 data-i18n="client_feedback_testimonial_4_user_title">Brand Manager, Urban Pulse</h5>
                   </div>
                 </div>
                 <div class="feedback__rating">
@@ -322,12 +327,16 @@
 
     <section class="section__container subscribe__container" id="contact">
       <div class="subscribe__content">
-        <h2 class="section__header">
+        <h2 class="section__header" data-i18n="subscribe_newsletter_header">
           Subscribe Newsletter Get Latest Updates and Dates
         </h2>
         <form action="/">
-          <input type="text" placeholder="Enter your email here..." />
-          <button class="btn">
+          <input
+            type="text"
+            data-i18n-placeholder="subscribe_newsletter_placeholder"
+            placeholder="Enter your email here..."
+          />
+          <button class="btn" data-i18n="subscribe_newsletter_button">
             Subscribe
             <span><i class="ri-arrow-right-long-line"></i></span>
           </button>
@@ -339,13 +348,15 @@
       <div class="section__container footer__container">
         <div class="footer__col">
           <div class="footer__logo">
-            <a href="#">Agency<span>Digital</span></a>
+            <a href="#" data-i18n="nav_logo_agency_digital"
+              >Agency<span>Digital</span></a
+            >
           </div>
-          <p class="section__description">
+          <p class="section__description" data-i18n="footer_description">
             AdencyBD is a creative digital agency dedicated to delivering
             innovative solutions.
           </p>
-          <h3>Follow Us</h3>
+          <h3 data-i18n="footer_follow_us">Follow Us</h3>
           <ul class="footer__socials">
             <li>
               <a href="#"><i class="ri-facebook-fill"></i></a>
@@ -365,48 +376,38 @@
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Quick Links</h4>
+          <h4 data-i18n="footer_quick_links_title">Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="#">About Agency</a></li>
-            <li><a href="#">Latest News & Blogs</a></li>
-            <li><a href="#">Terms of Users</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Need a Career?</a></li>
+            <li><a href="#" data-i18n="footer_quick_links_1">About Agency</a></li>
+            <li><a href="#" data-i18n="footer_quick_links_2">Latest News & Blogs</a></li>
+            <li><a href="#" data-i18n="footer_quick_links_3">Terms of Users</a></li>
+            <li><a href="#" data-i18n="footer_quick_links_4">Our Services</a></li>
+            <li><a href="#" data-i18n="footer_quick_links_5">Need a Career?</a></li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Support</h4>
+          <h4 data-i18n="footer_support_title">Support</h4>
           <ul class="footer__links">
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Report an Issue</a></li>
-            <li><a href="#">Get a Quote</a></li>
+            <li><a href="#" data-i18n="footer_support_1">Help Center</a></li>
+            <li><a href="#" data-i18n="footer_support_2">FAQs</a></li>
+            <li><a href="#" data-i18n="footer_support_3">Privacy Policy</a></li>
+            <li><a href="#" data-i18n="footer_support_4">Report an Issue</a></li>
+            <li><a href="#" data-i18n="footer_support_5">Get a Quote</a></li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Contact Us</h4>
-          <ul class="footer__links">
+          <h4 data-i18n="footer_contact_us_title">Contact Us</h4>
+          <ul class="footer__links">            
             <li>
-              <a href="#">
-                <span><i class="ri-phone-fill"></i></span> +91 0987654321
+              <a data-i18n="footer_contact_us" href="#">
+                <span><i class="ri-mail-fill"></i></span>
+                jfrancodardengo@gmail.com
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-mail-fill"></i></span> info@agencybd.com
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span><i class="ri-map-pin-2-fill"></i></span> 2456 Royal In.
-                Delhi
-              </a>
-            </li>
+            </li>            
           </ul>
         </div>
       </div>
-      <div class="footer__bar">
+      <div class="footer__bar" data-i18n="footer_copyright">
         Copyright © 2025 José Augusto F. Dardengo. All rights reserved.
       </div>
     </footer>

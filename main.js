@@ -1,3 +1,26 @@
+async function loadLanguage(lang) {
+  const response = await fetch(`lang/${lang}.json`);
+  const translations = await response.json();
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if(translations[key]) {
+      el.innerHTML = translations[key];
+    }
+  });
+
+  localStorage.setItem("lang", lang);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLog = localStorage.getItem("lang") || "en";
+  loadLanguage(savedLog);
+
+  document.getElementById("lang-switcher").addEventListener("change", (e) => {
+    loadLanguage(e.target.value);
+  });
+});
+
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
